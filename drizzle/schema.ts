@@ -22,6 +22,7 @@ export type InsertUser = typeof users.$inferInsert;
  * Tenant/Organization table for multi-tenancy support
  * Each user can belong to one or more tenants
  */
+
 export const tenants = mysqlTable("tenants", {
   id: varchar("id", { length: 64 }).primaryKey(),
   name: varchar("name", { length: 255 }).notNull(),
