@@ -408,4 +408,3 @@ export const complianceReminders = mysqlTable("compliance_reminders", {
 
 export type ComplianceReminder = typeof complianceReminders.$inferSelect;
 export type InsertComplianceReminder = typeof complianceReminders.$inferInsert;
-
